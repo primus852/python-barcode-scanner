@@ -33,7 +33,7 @@ class GetJson(threading.Thread):
                                 price = j['item']['matched_items'][0]['used_price']
                             mlist = [title, price, self.ean]
 
-                            with open('filme.csv', 'ab') as movies:
+                            with open('movies.csv', 'ab') as movies:
                                 wr = csv.writer(movies, quoting=csv.QUOTE_ALL)
                                 wr.writerow(mlist)
 
@@ -56,4 +56,5 @@ class GetJson(threading.Thread):
         else:
             pp.pprint(j)
 
+        # Debug
         print "Result: " + title

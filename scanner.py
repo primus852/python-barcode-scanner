@@ -82,6 +82,7 @@ if __name__ == "__main__":
         # Display the resulting frame
         cv2.imshow("BarCodeScanner", gray)
 
+        # Close on q
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
