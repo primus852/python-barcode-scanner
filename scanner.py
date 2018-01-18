@@ -2,7 +2,6 @@ import cv2
 from PIL import Image
 import zbar
 import pprint
-import csv
 import beep as b
 import api as ac
 
