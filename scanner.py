@@ -80,7 +80,7 @@ if __name__ == "__main__":
                 apiCall.join()
 
         # Display the resulting frame
-        cv2.imshow("#iothack15", gray)
+        cv2.imshow("BarCodeScanner", gray)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
