@@ -1,2 +1,6 @@
 .idea
-movies.csv
+BarcodeScanner.spec
+beep.pyc
+/movies.csv
+/build/
+/data.db

@@ -17,6 +17,10 @@ class MakeBeep(threading.Thread):
             frequency = 1800
             duration = 200
             winsound.Beep(frequency, duration)
+        if self.sound_type == 'duplicate':
+            frequency = 1500
+            duration = 1000
+            winsound.Beep(frequency, duration)
         elif self.sound_type == 'fail':
             frequency = 2800
             duration = 100
